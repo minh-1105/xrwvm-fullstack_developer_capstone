@@ -1,0 +1,8 @@
+﻿Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2026 - 12:44:00
+Django version 5.2.5, using settings 'server.cars.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.

@@ -1,0 +1,5 @@
+﻿COMMAND:
+curl.exe -s http://127.0.0.1:8000/djangoapp/get_dealer/1
+
+OUTPUT:
+{"status": 200, "dealer": {"id": 1, "full_name": "Prairie Star Motors", "city": "Topeka", "state": "Kansas", "address": "4100 SW 21st Street", "zip": "66604", "lat": 39.036, "long": -95.724, "short_name": "Prairie Star"}}

@@ -1,0 +1,77 @@
+DEALERS = [
+    {
+        "id": 1,
+        "full_name": "Prairie Star Motors",
+        "city": "Topeka",
+        "state": "Kansas",
+        "address": "4100 SW 21st Street",
+        "zip": "66604",
+        "lat": 39.036,
+        "long": -95.724,
+        "short_name": "Prairie Star",
+    },
+    {
+        "id": 2,
+        "full_name": "Lakeside Auto Group",
+        "city": "Chicago",
+        "state": "Illinois",
+        "address": "220 Lake Shore Drive",
+        "zip": "60601",
+        "lat": 41.886,
+        "long": -87.614,
+        "short_name": "Lakeside",
+    },
+    {
+        "id": 3,
+        "full_name": "Golden Gate Cars",
+        "city": "San Francisco",
+        "state": "California",
+        "address": "88 Mission Street",
+        "zip": "94105",
+        "lat": 37.793,
+        "long": -122.394,
+        "short_name": "Golden Gate",
+    },
+]
+
+REVIEWS = [
+    {
+        "id": 101,
+        "dealership": 1,
+        "name": "Avery Johnson",
+        "purchase": True,
+        "review": "Fantastic services and quick paperwork.",
+        "sentiment": "positive",
+        "car_make": "Toyota",
+        "car_model": "Camry",
+        "car_year": 2024,
+    },
+    {
+        "id": 102,
+        "dealership": 1,
+        "name": "Minh Tran",
+        "purchase": False,
+        "review": "Friendly team and clear pricing.",
+        "sentiment": "positive",
+        "car_make": "Honda",
+        "car_model": "Accord",
+        "car_year": 2023,
+    },
+    {
+        "id": 103,
+        "dealership": 2,
+        "name": "Jordan Lee",
+        "purchase": True,
+        "review": "The service desk was helpful.",
+        "sentiment": "positive",
+        "car_make": "Ford",
+        "car_model": "Escape",
+        "car_year": 2022,
+    },
+]
+
+CARS = [
+    {"make": "Toyota", "models": ["Camry", "Corolla", "RAV4"]},
+    {"make": "Honda", "models": ["Accord", "Civic", "CR-V"]},
+    {"make": "Ford", "models": ["Escape", "F-150", "Explorer"]},
+]

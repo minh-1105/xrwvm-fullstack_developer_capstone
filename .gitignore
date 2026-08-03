@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+db.sqlite3
+staticfiles/
+output/cookies.txt
+output/server_pid.txt
+output/server_job_id.txt
+output/*.err

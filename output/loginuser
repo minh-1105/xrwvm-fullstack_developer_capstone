@@ -1,0 +1,5 @@
+﻿COMMAND:
+curl.exe -s -c output\cookies.txt -X POST -d "username=root&password=root" http://127.0.0.1:8000/djangoapp/login
+
+OUTPUT:
+{"status": "success", "username": "root", "message": "User logged in"}

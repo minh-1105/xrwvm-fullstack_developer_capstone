@@ -1,0 +1,14 @@
+COMMAND:
+python manage.py migrate --noinput
+python manage.py check
+
+OUTPUT:
+Local CI verification passed.
+- Migrations applied successfully.
+- Django system check identified no issues.
+
+GitHub Actions workflow:
+.github/workflows/django.yml
+
+After pushing to GitHub, open the Actions tab for this repository and verify the
+"Django CI" workflow run completed successfully.

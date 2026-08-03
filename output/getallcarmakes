@@ -1,0 +1,5 @@
+﻿COMMAND:
+curl.exe -s http://127.0.0.1:8000/djangoapp/get_cars
+
+OUTPUT:
+{"status": 200, "cars": [{"make": "Toyota", "models": ["Camry", "Corolla", "RAV4"]}, {"make": "Honda", "models": ["Accord", "Civic", "CR-V"]}, {"make": "Ford", "models": ["Escape", "F-150", "Explorer"]}]}

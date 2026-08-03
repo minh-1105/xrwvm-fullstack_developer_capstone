@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Post Review | Cars Dealership{% endblock %}
+{% block content %}
+  <section class="hero">
+    <h1>Post Review</h1>
+    <p>{{ dealer.full_name }}</p>
+  </section>
+  <main class="container">
+    <p class="card">Endpoint: {{ request.get_full_path }}</p>
+    <form class="card" method="post">
+      {% csrf_token %}
+      <label for="name">Your Name</label>
+      <input id="name" name="name" value="{{ request.user.username }}">
+      <label for="car_make">Car Make</label>
+      <select id="car_make" name="car_make">
+        {% for car in cars %}
+          <option>{{ car.make }}</option>
+        {% endfor %}
+      </select>
+      <label for="car_model">Car Model</label>
+      <input id="car_model" name="car_model" value="Camry">
+      <label for="car_year">Car Year</label>
+      <input id="car_year" name="car_year" value="2024">
+      <label for="purchase"><input id="purchase" name="purchase" type="checkbox" checked> Purchased from this dealer</label>
+      <label for="review">Review</label>
+      <textarea id="review" name="review">Fantastic services and helpful staff.</textarea>
+      <button class="button" type="submit">Submit Review</button>
+    </form>
+  </main>
+{% endblock %}
