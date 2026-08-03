@@ -78,3 +78,21 @@ CARS = [
     {"make": "Honda", "models": ["Accord", "Civic", "CR-V"]},
     {"make": "Ford", "models": ["Escape", "F-150", "Explorer"]},
 ]
+
+CAR_MODELS = [
+    {"make": "Toyota", "model": "Camry"},
+    {"make": "Toyota", "model": "Corolla"},
+    {"make": "Toyota", "model": "RAV4"},
+    {"make": "Toyota", "model": "Prius"},
+    {"make": "Honda", "model": "Accord"},
+    {"make": "Honda", "model": "Civic"},
+    {"make": "Honda", "model": "CR-V"},
+    {"make": "Honda", "model": "Pilot"},
+    {"make": "Ford", "model": "Escape"},
+    {"make": "Ford", "model": "F-150"},
+    {"make": "Ford", "model": "Explorer"},
+    {"make": "Ford", "model": "Mustang"},
+    {"make": "Chevrolet", "model": "Malibu"},
+    {"make": "Chevrolet", "model": "Tahoe"},
+    {"make": "Nissan", "model": "Altima"},
+]

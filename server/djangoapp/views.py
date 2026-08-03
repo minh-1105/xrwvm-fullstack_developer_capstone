@@ -6,7 +6,7 @@ from django.http import JsonResponse
 from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 
-from .data import CARS, DEALERS, REVIEWS
+from .data import CAR_MODELS, CARS, DEALERS, REVIEWS
 
 
 def _dealer(dealer_id):
@@ -121,7 +121,7 @@ def fetch_dealer_reviews(request, dealer_id):
 
 
 def get_cars(request):
-    return JsonResponse({"status": 200, "cars": CARS})
+    return JsonResponse({"CarModels": CAR_MODELS})
 
 
 @csrf_exempt
@@ -129,3 +129,7 @@ def analyze_review(request):
     payload = request.POST or json.loads(request.body or "{}")
     text = payload.get("review", payload.get("text", ""))
     return JsonResponse({"status": 200, "review": text, "sentiment": _sentiment(text)})
+
+
+def analyze_review_text(request, review_text):
+    return JsonResponse({"review": review_text, "sentiment": _sentiment(review_text)})

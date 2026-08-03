@@ -1,5 +1,5 @@
-﻿COMMAND:
-curl.exe -s -X POST -d "review=Fantastic services" http://127.0.0.1:8000/djangoapp/analyze
+COMMAND:
+curl.exe -X GET http://127.0.0.1:8000/djangoapp/analyze/Fantastic%20services
 
 OUTPUT:
-{"status": 200, "review": "Fantastic services", "sentiment": "positive"}
+{"review": "Fantastic services", "sentiment": "positive"}

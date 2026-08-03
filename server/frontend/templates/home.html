@@ -17,7 +17,11 @@
       {% for dealer in dealers %}
         <article class="card">
           <h3>{{ dealer.full_name }}</h3>
-          <p>{{ dealer.address }}, {{ dealer.city }}, {{ dealer.state }} {{ dealer.zip }}</p>
+          <p><strong>Dealer ID:</strong> {{ dealer.id }}</p>
+          <p><strong>City:</strong> {{ dealer.city }}</p>
+          <p><strong>State:</strong> {{ dealer.state }}</p>
+          <p><strong>Address:</strong> {{ dealer.address }}</p>
+          <p><strong>ZIP:</strong> {{ dealer.zip }}</p>
           <a class="button" href="/dealer/{{ dealer.id }}/">View Dealer</a>
           {% if request.user.is_authenticated %}
             <a class="button secondary" href="/dealer/{{ dealer.id }}/review/">Review Dealer</a>
