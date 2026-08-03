@@ -10,5 +10,11 @@ Local CI verification passed.
 GitHub Actions workflow:
 .github/workflows/django.yml
 
-After pushing to GitHub, open the Actions tab for this repository and verify the
-"Django CI" workflow run completed successfully.
+GitHub Actions run:
+https://github.com/minh-1105/cars-dealership/actions/runs/30788213102
+
+Run status:
+- workflow: Django CI
+- commit: 07dc46b27d68644dec0cc7ddfaa2380eb4f5b5cb
+- status: completed
+- conclusion: success
