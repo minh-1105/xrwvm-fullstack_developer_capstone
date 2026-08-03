@@ -9,7 +9,11 @@
     <p class="card">Endpoint: {{ request.get_full_path }}</p>
     <section class="card">
       <h2>Dealer Details</h2>
-      <p>{{ dealer.address }}, {{ dealer.city }}, {{ dealer.state }} {{ dealer.zip }}</p>
+      <p><strong>Dealer ID:</strong> {{ dealer.id }}</p>
+      <p><strong>City:</strong> {{ dealer.city }}</p>
+      <p><strong>State:</strong> {{ dealer.state }}</p>
+      <p><strong>Address:</strong> {{ dealer.address }}</p>
+      <p><strong>ZIP:</strong> {{ dealer.zip }}</p>
       <p>Coordinates: {{ dealer.lat }}, {{ dealer.long }}</p>
       {% if request.user.is_authenticated %}
         <a class="button" href="/dealer/{{ dealer.id }}/review/">Post Review</a>
@@ -20,6 +24,7 @@
       <article class="card review">
         <h3>{{ review.name }} - {{ review.sentiment }}</h3>
         <p>{{ review.review }}</p>
+        <p>Purchase Date: {{ review.purchase_date }}</p>
         <p>{{ review.car_year }} {{ review.car_make }} {{ review.car_model }}</p>
       </article>
     {% endfor %}
