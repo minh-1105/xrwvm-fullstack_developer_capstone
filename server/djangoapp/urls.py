@@ -15,6 +15,10 @@ urlpatterns = [
     path("djangoapp/get_dealers/<str:state>", views.get_dealers_by_state, name="get_dealers_by_state"),
     path("djangoapp/get_dealer/<int:dealer_id>", views.get_dealer_by_id, name="get_dealer_by_id"),
     path("djangoapp/dealer/<int:dealer_id>/reviews", views.get_dealer_reviews, name="get_dealer_reviews"),
+    path("djangoapp/fetchDealers", views.get_dealers, name="fetch_dealers"),
+    path("djangoapp/fetchDealers/<str:state>", views.get_dealers_by_state, name="fetch_dealers_by_state"),
+    path("djangoapp/fetchDealer/<int:dealer_id>", views.fetch_dealer_by_id, name="fetch_dealer_by_id"),
+    path("djangoapp/fetchReviews/dealer/<int:dealer_id>", views.fetch_dealer_reviews, name="fetch_dealer_reviews"),
     path("djangoapp/get_cars", views.get_cars, name="get_cars"),
     path("djangoapp/analyze", views.analyze_review, name="analyze_review"),
 ]

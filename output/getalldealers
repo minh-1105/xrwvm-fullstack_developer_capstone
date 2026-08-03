@@ -1,5 +1,5 @@
-﻿COMMAND:
-curl.exe -s http://127.0.0.1:8000/djangoapp/get_dealers
+COMMAND:
+curl.exe -s http://127.0.0.1:8000/djangoapp/fetchDealers
 
 OUTPUT:
 {"status": 200, "dealers": [{"id": 1, "full_name": "Prairie Star Motors", "city": "Topeka", "state": "Kansas", "address": "4100 SW 21st Street", "zip": "66604", "lat": 39.036, "long": -95.724, "short_name": "Prairie Star"}, {"id": 2, "full_name": "Lakeside Auto Group", "city": "Chicago", "state": "Illinois", "address": "220 Lake Shore Drive", "zip": "60601", "lat": 41.886, "long": -87.614, "short_name": "Lakeside"}, {"id": 3, "full_name": "Golden Gate Cars", "city": "San Francisco", "state": "California", "address": "88 Mission Street", "zip": "94105", "lat": 37.793, "long": -122.394, "short_name": "Golden Gate"}]}

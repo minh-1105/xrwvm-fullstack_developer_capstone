@@ -1,5 +1,5 @@
-﻿COMMAND:
-curl.exe -s http://127.0.0.1:8000/djangoapp/dealer/1/reviews
+COMMAND:
+curl.exe -s http://127.0.0.1:8000/djangoapp/fetchReviews/dealer/1
 
 OUTPUT:
-{"status": 200, "dealer_id": 1, "reviews": [{"id": 101, "dealership": 1, "name": "Avery Johnson", "purchase": true, "review": "Fantastic services and quick paperwork.", "sentiment": "positive", "car_make": "Toyota", "car_model": "Camry", "car_year": 2024}, {"id": 102, "dealership": 1, "name": "Minh Tran", "purchase": false, "review": "Friendly team and clear pricing.", "sentiment": "positive", "car_make": "Honda", "car_model": "Accord", "car_year": 2023}]}
+{"reviews": [{"id": 101, "dealership": 1, "name": "Avery Johnson", "purchase": true, "purchase_date": "2026-07-14", "review": "Fantastic services and quick paperwork.", "sentiment": "positive", "car_make": "Toyota", "car_model": "Camry", "car_year": 2024}, {"id": 102, "dealership": 1, "name": "Minh Tran", "purchase": false, "purchase_date": "2026-07-20", "review": "Friendly team and clear pricing.", "sentiment": "positive", "car_make": "Honda", "car_model": "Accord", "car_year": 2023}]}

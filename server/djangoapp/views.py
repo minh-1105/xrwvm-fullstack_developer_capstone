@@ -63,6 +63,7 @@ def post_review(request, dealer_id):
                 "dealership": dealer_id,
                 "name": request.POST.get("name", request.user.username or "Guest"),
                 "purchase": request.POST.get("purchase") == "on",
+                "purchase_date": "2026-08-03",
                 "review": review_text,
                 "sentiment": _sentiment(review_text),
                 "car_make": request.POST.get("car_make", "Toyota"),
@@ -88,9 +89,8 @@ def api_login(request):
 
 
 def api_logout(request):
-    username = request.user.username if request.user.is_authenticated else "anonymous"
     logout(request)
-    return JsonResponse({"userName": username, "status": "Logged out"})
+    return JsonResponse({"userName": "", "status": "Logged out"})
 
 
 def get_dealers(request):
@@ -106,9 +106,18 @@ def get_dealer_by_id(request, dealer_id):
     return JsonResponse({"status": 200, "dealer": _dealer(dealer_id)})
 
 
+def fetch_dealer_by_id(request, dealer_id):
+    return JsonResponse(_dealer(dealer_id))
+
+
 def get_dealer_reviews(request, dealer_id):
     reviews = [review for review in REVIEWS if review["dealership"] == dealer_id]
     return JsonResponse({"status": 200, "dealer_id": dealer_id, "reviews": reviews})
+
+
+def fetch_dealer_reviews(request, dealer_id):
+    reviews = [review for review in REVIEWS if review["dealership"] == dealer_id]
+    return JsonResponse({"reviews": reviews})
 
 
 def get_cars(request):
