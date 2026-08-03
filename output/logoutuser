@@ -1,5 +1,5 @@
-﻿COMMAND:
+COMMAND:
 curl.exe -s -b output\cookies.txt http://127.0.0.1:8000/djangoapp/logout
 
 OUTPUT:
-{"status": "success", "username": "root", "message": "User logged out"}
+{"userName": "sampleuser", "status": "Logged out"}

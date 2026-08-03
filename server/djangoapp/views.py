@@ -77,20 +77,20 @@ def post_review(request, dealer_id):
 @csrf_exempt
 def api_login(request):
     payload = request.POST or json.loads(request.body or "{}")
-    username = payload.get("username", "root")
+    username = payload.get("userName", payload.get("username", "root"))
     password = payload.get("password", "root")
     user, _ = User.objects.get_or_create(username=username)
     user.set_password(password)
     user.save()
     auth_user = authenticate(request, username=username, password=password)
     login(request, auth_user)
-    return JsonResponse({"status": "success", "username": username, "message": "User logged in"})
+    return JsonResponse({"userName": username, "status": "Authenticated"})
 
 
 def api_logout(request):
     username = request.user.username if request.user.is_authenticated else "anonymous"
     logout(request)
-    return JsonResponse({"status": "success", "username": username, "message": "User logged out"})
+    return JsonResponse({"userName": username, "status": "Logged out"})
 
 
 def get_dealers(request):
