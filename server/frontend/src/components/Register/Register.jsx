@@ -22,19 +22,56 @@ export default function Register() {
     <form className="register-form" onSubmit={submitRegistration}>
       <h1>Sign-Up</h1>
       <label htmlFor="username">Username</label>
-      <input id="username" name="username" value={form.username} onChange={updateField} required />
+      <input
+        id="username"
+        name="username"
+        placeholder="Username"
+        value={form.username}
+        onChange={updateField}
+        required
+      />
 
       <label htmlFor="firstName">First Name</label>
-      <input id="firstName" name="firstName" value={form.firstName} onChange={updateField} required />
+      <input
+        id="firstName"
+        name="firstName"
+        placeholder="First Name"
+        value={form.firstName}
+        onChange={updateField}
+        required
+      />
 
       <label htmlFor="lastName">Last Name</label>
-      <input id="lastName" name="lastName" value={form.lastName} onChange={updateField} required />
+      <input
+        id="lastName"
+        name="lastName"
+        placeholder="Last Name"
+        value={form.lastName}
+        onChange={updateField}
+        required
+      />
 
       <label htmlFor="email">Email</label>
-      <input id="email" name="email" type="email" value={form.email} onChange={updateField} required />
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Email"
+        value={form.email}
+        onChange={updateField}
+        required
+      />
 
       <label htmlFor="password">Password</label>
-      <input id="password" name="password" type="password" value={form.password} onChange={updateField} required />
+      <input
+        id="password"
+        name="password"
+        type="password"
+        placeholder="Password"
+        value={form.password}
+        onChange={updateField}
+        required
+      />
 
       <button type="submit">Register</button>
     </form>

@@ -1,3 +1,7 @@
+COMMAND:
+python manage.py runserver
+
+OUTPUT:
 Watching for file changes with StatReloader
 Performing system checks...
 
