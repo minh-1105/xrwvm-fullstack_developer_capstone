@@ -1,8 +1,13 @@
-# Cars Dealership
+# fullstack_developer_capstone
 
-Full-stack development capstone project for a national car dealership. The app
-uses Django for the backend, static HTML/CSS pages for About and Contact, and a
-React registration component for the frontend source requirement.
+Repository name: `xrwvm-fullstack_developer_capstone`
+
+Project name: `fullstack_developer_capstone`
+
+This is the Full Stack Developer Capstone project. The application implements a
+national car dealership platform using Django for the backend, static HTML/CSS
+pages for About and Contact, and a React registration component for the
+frontend source requirement.
 
 ## Features
 
