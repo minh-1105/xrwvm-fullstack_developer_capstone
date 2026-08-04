@@ -34,6 +34,72 @@ DEALERS = [
     },
 ]
 
+_EXTRA_DEALER_LOCATIONS = [
+    ("Desert Bloom Autos", "Phoenix", "Arizona", "1500 Camelback Road", "85016", 33.509, -112.048, "Desert Bloom"),
+    ("Mile High Motors", "Denver", "Colorado", "300 Colfax Avenue", "80203", 39.739, -104.984, "Mile High"),
+    ("Peachtree Auto Mall", "Atlanta", "Georgia", "500 Peachtree Street", "30308", 33.771, -84.386, "Peachtree"),
+    ("Emerald City Cars", "Seattle", "Washington", "900 Pine Street", "98101", 47.613, -122.333, "Emerald City"),
+    ("Liberty Wheels", "Philadelphia", "Pennsylvania", "210 Market Street", "19106", 39.949, -75.145, "Liberty"),
+    ("Bayou Auto Center", "New Orleans", "Louisiana", "700 Canal Street", "70130", 29.953, -90.069, "Bayou Auto"),
+    ("Music City Motors", "Nashville", "Tennessee", "120 Broadway", "37201", 36.162, -86.774, "Music City"),
+    ("Twin Cities Auto", "Minneapolis", "Minnesota", "80 Hennepin Avenue", "55401", 44.981, -93.269, "Twin Cities"),
+    ("Queen City Cars", "Charlotte", "North Carolina", "600 Tryon Street", "28202", 35.227, -80.843, "Queen City"),
+    ("Motor City Select", "Detroit", "Michigan", "400 Woodward Avenue", "48226", 42.331, -83.046, "Motor City"),
+    ("Sun Coast Dealership", "Tampa", "Florida", "1100 Bayshore Boulevard", "33606", 27.943, -82.465, "Sun Coast"),
+    ("Capital Auto Group", "Washington", "District of Columbia", "1300 Pennsylvania Avenue", "20004", 38.895, -77.031, "Capital Auto"),
+    ("Gateway Auto Sales", "St. Louis", "Missouri", "200 Market Street", "63102", 38.626, -90.189, "Gateway Auto"),
+    ("River City Motors", "Portland", "Oregon", "340 Burnside Street", "97209", 45.523, -122.681, "River City"),
+    ("Bluegrass Cars", "Lexington", "Kentucky", "250 Main Street", "40507", 38.047, -84.497, "Bluegrass"),
+    ("Granite State Auto", "Manchester", "New Hampshire", "90 Elm Street", "03101", 42.995, -71.454, "Granite State"),
+    ("Ocean State Motors", "Providence", "Rhode Island", "55 Water Street", "02903", 41.824, -71.412, "Ocean State"),
+    ("Sooner Auto Group", "Oklahoma City", "Oklahoma", "600 Reno Avenue", "73102", 35.466, -97.516, "Sooner Auto"),
+    ("Hoosier Car Center", "Indianapolis", "Indiana", "100 Meridian Street", "46204", 39.768, -86.158, "Hoosier"),
+    ("Buckeye Motors", "Columbus", "Ohio", "300 High Street", "43215", 39.961, -82.999, "Buckeye"),
+    ("Badger Auto Plaza", "Madison", "Wisconsin", "10 Capitol Square", "53703", 43.074, -89.384, "Badger Auto"),
+    ("Hawkeye Cars", "Des Moines", "Iowa", "400 Grand Avenue", "50309", 41.586, -93.625, "Hawkeye"),
+    ("Volunteer Motors", "Knoxville", "Tennessee", "700 Gay Street", "37902", 35.965, -83.918, "Volunteer"),
+    ("Alamo Auto Group", "San Antonio", "Texas", "100 Alamo Plaza", "78205", 29.426, -98.486, "Alamo Auto"),
+    ("Space City Cars", "Houston", "Texas", "800 Main Street", "77002", 29.76, -95.369, "Space City"),
+    ("Silicon Valley Motors", "San Jose", "California", "200 Santa Clara Street", "95113", 37.338, -121.886, "Silicon Valley"),
+    ("Harbor Auto Exchange", "Baltimore", "Maryland", "500 Pratt Street", "21201", 39.286, -76.618, "Harbor Auto"),
+    ("Steel City Motors", "Pittsburgh", "Pennsylvania", "600 Liberty Avenue", "15222", 40.441, -80.0, "Steel City"),
+    ("Red Rock Auto", "Las Vegas", "Nevada", "300 Fremont Street", "89101", 36.17, -115.144, "Red Rock"),
+    ("Wasatch Auto Group", "Salt Lake City", "Utah", "100 State Street", "84111", 40.761, -111.891, "Wasatch Auto"),
+    ("Bison Motors", "Fargo", "North Dakota", "50 Broadway North", "58102", 46.878, -96.789, "Bison Motors"),
+    ("Mountaineer Cars", "Charleston", "West Virginia", "200 Capitol Street", "25301", 38.35, -81.632, "Mountaineer"),
+    ("Palmetto Auto", "Columbia", "South Carolina", "1200 Main Street", "29201", 34.0, -81.034, "Palmetto"),
+    ("Green Mountain Motors", "Burlington", "Vermont", "60 Church Street", "05401", 44.476, -73.213, "Green Mountain"),
+    ("Pine Tree Auto", "Portland", "Maine", "100 Commercial Street", "04101", 43.657, -70.25, "Pine Tree"),
+    ("Old Dominion Cars", "Richmond", "Virginia", "700 Broad Street", "23219", 37.541, -77.436, "Old Dominion"),
+    ("Garden State Motors", "Newark", "New Jersey", "20 Broad Street", "07102", 40.735, -74.172, "Garden State"),
+    ("Empire Auto Group", "New York", "New York", "350 Fifth Avenue", "10118", 40.748, -73.986, "Empire Auto"),
+    ("Constitution Motors", "Hartford", "Connecticut", "90 State House Square", "06103", 41.766, -72.673, "Constitution"),
+    ("Beantown Cars", "Boston", "Massachusetts", "100 Cambridge Street", "02114", 42.361, -71.063, "Beantown"),
+    ("Gem State Auto", "Boise", "Idaho", "200 Capitol Boulevard", "83702", 43.615, -116.202, "Gem State"),
+    ("Big Sky Motors", "Billings", "Montana", "300 Montana Avenue", "59101", 45.783, -108.501, "Big Sky"),
+    ("Cornhusker Auto", "Omaha", "Nebraska", "1600 Dodge Street", "68102", 41.258, -95.938, "Cornhusker"),
+    ("Frontier Cars", "Cheyenne", "Wyoming", "210 Capitol Avenue", "82001", 41.14, -104.821, "Frontier Cars"),
+    ("Duke City Motors", "Albuquerque", "New Mexico", "500 Central Avenue", "87102", 35.084, -106.651, "Duke City"),
+    ("Magnolia Auto", "Jackson", "Mississippi", "300 State Street", "39201", 32.299, -90.185, "Magnolia"),
+    ("Heartland Cars", "Wichita", "Kansas", "250 Douglas Avenue", "67202", 37.687, -97.33, "Heartland"),
+]
+
+DEALERS.extend(
+    {
+        "id": dealer_id,
+        "full_name": full_name,
+        "city": city,
+        "state": state,
+        "address": address,
+        "zip": zip_code,
+        "lat": lat,
+        "long": long,
+        "short_name": short_name,
+    }
+    for dealer_id, (full_name, city, state, address, zip_code, lat, long, short_name)
+    in enumerate(_EXTRA_DEALER_LOCATIONS, start=4)
+)
+
 REVIEWS = [
     {
         "id": 101,
