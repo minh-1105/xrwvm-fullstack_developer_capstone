@@ -3,3 +3,9 @@ curl.exe -X GET http://127.0.0.1:8000/djangoapp/analyze/Fantastic%20services
 
 OUTPUT:
 {"review": "Fantastic services", "sentiment": "positive"}
+
+GitHub file:
+https://github.com/minh-1105/xrwvm-fullstack_developer_capstone/blob/main/output/analyzereview
+
+GitHub Actions run:
+https://github.com/minh-1105/xrwvm-fullstack_developer_capstone/actions/runs/30788213102
