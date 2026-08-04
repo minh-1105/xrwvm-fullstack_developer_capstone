@@ -11,7 +11,7 @@ GitHub Actions workflow:
 .github/workflows/django.yml
 
 GitHub Actions run:
-https://github.com/minh-1105/cars-dealership/actions/runs/30788213102
+https://github.com/minh-1105/xrwvm-fullstack_developer_capstone/actions/runs/30788213102
 
 Run status:
 - workflow: Django CI
